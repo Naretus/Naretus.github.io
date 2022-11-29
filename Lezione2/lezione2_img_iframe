@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Immagine Test</h2>
+        <img src="Assets/imgtest.webp"
+        alt="Letteralmente Test" >
+    </body>
+    </html>
