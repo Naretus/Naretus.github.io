@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Iscrizione</title>
+
+    <style>
+                    .logo img {
+            width: 45%;
+            height: 45;
+        }
+
+    </style>
 </head>
 <body>
     <!--iscrivere
@@ -20,5 +28,45 @@ impaginato bene
 campi obbligatori cioè anagrafica + mail + user + password
 name e id a ogni tag
 -->
+</body>
+<body>
+    <div class="logo">
+        <img src="Assets/nintendo.logo.jpg" alt="Logo Nintendo.">
+    </div>
+    <h1>Crea il tuo account Nintendo</h1><br>
+    <br>
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="name">Nome: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+            <label for="name">Cognome: </label>
+            <input type="text" name="surname" id="surname" required>
+          </div>
+          <div class="form-example">
+            <label for="name">Data di nascita: </label>
+            <input type="date" name="date" id="date" required>
+          </div>
+          <div class="form-example">
+          <label for="name">Sesso: </label>
+          <input type="radio" name="Male" id="Male">
+          <input type="radio" name="Female" id="Female">
+        </div>
+        <div class="form-example">
+          <label for="email">Indirizzo e-mail: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-example">
+            <label for="name">Password: </label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="form-example">
+            <label for="name">Conferma Password: </label>
+            <input type="password" name="password" id="password" required>
+          </div>
+        <div class="form-example">
+          <input type="submit" value="Iscriviti">
+        </div>
 </body>
 </html>
