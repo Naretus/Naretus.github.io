@@ -8,11 +8,23 @@
 
     <style>
                     .logo img {
-            width: 45%;
-            height: 45;
+            width: 25%;
+            height: 25;
         }
 
     </style>
+    <style>
+      .iscriviti {
+width: 15%;
+height: 15;
+}
+</style>
+<style>
+ .warning {
+  background-color: #E60012;
+  width: 25%;
+}
+</style>
 </head>
 <body>
     <!--iscrivere
@@ -33,41 +45,61 @@ name e id a ogni tag
     <div class="logo">
         <img src="Assets/nintendo.logo.jpg" alt="Logo Nintendo.">
     </div>
-    <h1>Crea il tuo account Nintendo</h1><br>
+    <div class="warning"
+   style="color: rgb(255, 255, 255);"><h1>Crea il tuo account Nintendo<sup>®</sup></h1></div><br>
     <br>
     <form action="" method="get" class="form-example">
         <div class="form-example">
-          <label for="name">Nome: </label>
+          <label for="name">Nome*: </label>
           <input type="text" name="name" id="name" required>
-        </div>
+        </div><br>
         <div class="form-example">
-            <label for="name">Cognome: </label>
+            <label for="name">Cognome*: </label>
             <input type="text" name="surname" id="surname" required>
-          </div>
+          </div><br>          
           <div class="form-example">
-            <label for="name">Data di nascita: </label>
+            <label for="name">Data di nascita*: </label>
             <input type="date" name="date" id="date" required>
-          </div>
+          </div><br>
           <div class="form-example">
           <label for="name">Sesso: </label>
-          <label for="name">M </label><input type="radio" name="Male" id="Male">
-          <label for="name">F </label><input type="radio" name="Female" id="Female">
-          <label for="name">N </label><input type="radio" name="Neutral" id="Neutral">
-        </div>
+          <label for="name">M </label><input type="radio" name="drone" id="Male" value="Male">
+          <label for="name">F </label><input type="radio" name="drone" id="Female" value="Female">
+          <label for="name">N </label><input type="radio" name="drone" id="Neutral" value="Neutral">
+        </div><br>
         <div class="form-example">
-          <label for="email">Indirizzo e-mail: </label>
+          <label for="email">Indirizzo e-mail*: </label>
           <input type="email" name="email" id="email" required>
-        </div>
+        </div><br>
         <div class="form-example">
-            <label for="name">Password: </label>
+            <label for="name">Password*: </label>
             <input type="password" name="password" id="password" required>
-          </div>
+          </div><br>
           <div class="form-example">
-            <label for="name">Conferma Password: </label>
+            <label for="name">Conferma Password*: </label>
             <input type="password" name="password" id="password" required>
-          </div>
-        <div class="form-example">
-          <input type="submit" value="Iscriviti">
+          </div><br>
+          <div class="form-example">
+            <label for="name">Username*: </label>
+            <input type="text" name="username" id="username" required>
+          </div><br>
+          <div class="form-example">
+          <label for="name">Quali sono gli ultimi titoli che hai acquistato per una console Nintendo (optional)</label><br>
+<textarea id="name" name="name" rows="5" cols="33" placeholder="Pokémon Scarlet & Violet, Legend of Zelda, ...">
+  </textarea>
+       </div><br>
+       <br>
+       <br>
+       <div class="form-example">        
+          <legend><b>Acconsenti al trattamento per la privacy dei dati</b></legend><br>
+          <label for="name">Accetto i termini dell'Accordo per l'account Nintendo e prendo atto della Policy sulla privacy dell'account Nintendo.</label>      
+         <div>
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy"></label>
+       </div>    
+        <div class="form-example">                  
+        <input type="image" id="image" alt="iscriviti"
+        src="assets/iscriviti.jpeg" height="7%" width="7%"> 
         </div>
 </body>
 </html>
