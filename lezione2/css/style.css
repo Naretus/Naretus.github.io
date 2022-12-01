@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
 /* General styles */
 
 body {
@@ -22,7 +24,7 @@ body {
    
   .card h2, .card p {
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Nerko One', cursive;
   }
 
   /* Header and footer */
