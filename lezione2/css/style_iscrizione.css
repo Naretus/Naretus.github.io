@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;background-color: aliceblue;
+}
+
+.logo img {
+    width: 36em;
+    height: 20em;
+    
+}
+
+.iscriviti {
+    width: 5em;
+    height: 5em;
+
+}
+
+.warning h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #E60012;
+    color: aliceblue;
+    width: 18em;
+    height: auto;
+}
+
