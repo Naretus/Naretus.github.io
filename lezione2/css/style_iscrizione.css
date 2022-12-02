@@ -3,6 +3,16 @@ body {
     margin: 0;
 }
 
+.generale {
+    margin: auto;
+    width: 50%;
+    background-color: #F9F9F9;
+    border: 2px solid #202124;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
 html {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;background-color: aliceblue;
