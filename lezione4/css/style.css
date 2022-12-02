@@ -55,10 +55,15 @@ aside {
     width: 16%;
     padding-left: .5rem;
     margin-left: .5rem;
-    float: right;
 }
 
 
 p {
     font-family: 'Fira Sans', sans-serif;
 }
+
+ul {
+    border: 2px solid rebeccapurple;
+    padding: .5em;
+    display: flex
+  }
