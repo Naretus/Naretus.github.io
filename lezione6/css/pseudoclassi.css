@@ -1,0 +1,53 @@
+/* General tags */
+hr {
+    border: 2px solid blue;
+    border-style: dotted;
+  }
+  
+  /* :any-link */
+  .anylinks a:any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+  
+  /* WebKit browsers */
+  .anylinks a:-webkit-any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+  
+  /* :links */
+  .onlylinks a:link,
+  .onlylinks a:visited {
+    background-color: yellowgreen;
+    color: black;
+  }
+  
+  /* target */
+  .internalTarget p:target {
+    background-color: gold;
+  }
+  
+  /* Add a pseudo-element inside the target element */
+  .internalTarget p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: 0.25em;
+  }
+  
+  /* Style italic elements within the target element */
+  .internalTarget p:target i {
+    color: red;
+  }
+
+  label,
+input[type='submit'] {
+    display: block;
+    margin-top: 1em;
+}
+
+input:checked {
+    border: none;
+    outline: 2px solid deeppink;
+}
