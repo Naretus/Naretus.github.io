@@ -1,0 +1,123 @@
+/* 1 STEP : box sizing and lobotimized owl */
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+/* 2 STEP : generic styling rules */
+
+body {
+  background: #bbb;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+header,
+footer {
+  background-color: #e60012;
+  padding: 1.5em;
+  color: #fff;
+}
+
+.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 18em;
+  height: auto;
+}
+
+.logo img {
+  width: 50%;
+  height: 40%;
+  align-self: center;
+}
+
+main {
+  background: #fff;
+  padding: 0 1.5em 1.5em 1.5em;
+}
+
+header,
+footer,
+main {
+  border-radius: 5px;
+}
+
+article {
+  background-color: #dedede;
+  padding: 1.5em;
+}
+
+article h4 {
+  margin: 0;
+}
+
+/* 3 STEP : applying float section */
+
+/* double container pattern */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+article {
+  float: left;
+  width: 50%;
+}
+
+/* 4 STEP : fixing floating section */
+
+section::after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+/* 5 STEP : article margins */
+
+article {
+  margin: 0 1.5em 1.5em 0;
+  width: calc(50% - 1.5em);
+}
+
+/*fixes the margins of the edge children*/
+section {
+  margin-right: -1.5em;
+  margin-bottom: -1.5em;
+}
+
+/* 6 STEP : Fixes collapsing margin of section title */
+
+section::before {
+  display: table;
+  content: " ";
+}
+
+/* 7 STEP : grid row clearfix */
+
+.articles > :nth-child(2n + 1) {
+  clear: left;
+}
+
+/* 8 STEP : grid element styling */
+
+.articles img {
+  float: left;
+  margin: 0 1.5em 1.5em 0;
+}
+
+.articles .article-body {
+  overflow: auto;
+}
